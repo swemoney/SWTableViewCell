@@ -33,6 +33,15 @@
 		AF34B78217DEE2B800BD9082 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF34B78017DEE2B700BD9082 /* MainStoryboard.storyboard */; };
 		AF34B78517DEE2B800BD9082 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF34B78417DEE2B800BD9082 /* ViewController.m */; };
 		AFF15D1717F35E46007F5746 /* MI.png in Resources */ = {isa = PBXBuildFile; fileRef = AFF15D1617F35E46007F5746 /* MI.png */; };
+		FD35FAFB1D251840006C310F /* SWTableViewCellFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = FD35FAFA1D251840006C310F /* SWTableViewCellFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD35FAFF1D251840006C310F /* SWTableViewCellFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD35FAF81D251840006C310F /* SWTableViewCellFramework.framework */; };
+		FD35FB001D251840006C310F /* SWTableViewCellFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FD35FAF81D251840006C310F /* SWTableViewCellFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FD35FB061D2518AB006C310F /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 810308861846579B00C378F0 /* NSMutableArray+SWUtilityButtons.m */; };
+		FD35FB081D2518AB006C310F /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810308881846579B00C378F0 /* SWCellScrollView.m */; };
+		FD35FB0A1D2518AB006C310F /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103088A1846579B00C378F0 /* SWLongPressGestureRecognizer.m */; };
+		FD35FB0C1D2518AB006C310F /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103088C1846579B00C378F0 /* SWTableViewCell.m */; };
+		FD35FB0E1D2518AB006C310F /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8103088E1846579B00C378F0 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		FD35FB101D2518AB006C310F /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 810308901846579B00C378F0 /* SWUtilityButtonView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +52,28 @@
 			remoteGlobalIDString = AF34B76417DEE2B100BD9082;
 			remoteInfo = SWTableViewCell;
 		};
+		FD35FAFD1D251840006C310F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF34B75D17DEE2AE00BD9082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD35FAF71D251840006C310F;
+			remoteInfo = SWTableViewCellFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD35FB041D251840006C310F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FD35FB001D251840006C310F /* SWTableViewCellFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		561A417CAF3000B9397EB62B /* Pods-SWTableViewCellTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTableViewCellTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWTableViewCellTests/Pods-SWTableViewCellTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +119,9 @@
 		AF34B78417DEE2B800BD9082 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFF15D1617F35E46007F5746 /* MI.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MI.png; sourceTree = "<group>"; };
 		E9AD27C1AFAEBD8EA1DEF5A5 /* Pods-SWTableViewCellTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWTableViewCellTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWTableViewCellTests/Pods-SWTableViewCellTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD35FAF81D251840006C310F /* SWTableViewCellFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWTableViewCellFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD35FAFA1D251840006C310F /* SWTableViewCellFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWTableViewCellFramework.h; sourceTree = "<group>"; };
+		FD35FAFC1D251840006C310F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +138,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF34B76917DEE2B200BD9082 /* UIKit.framework in Frameworks */,
+				FD35FAFF1D251840006C310F /* SWTableViewCellFramework.framework in Frameworks */,
 				AF34B76B17DEE2B200BD9082 /* Foundation.framework in Frameworks */,
 				AF34B76D17DEE2B200BD9082 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD35FAF41D251840006C310F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +204,7 @@
 			children = (
 				AF34B76E17DEE2B200BD9082 /* SWTableViewCell */,
 				76D732641AE2F50100909802 /* SWTableViewCellTests */,
+				FD35FAF91D251840006C310F /* SWTableViewCellFramework */,
 				AF34B76717DEE2B200BD9082 /* Frameworks */,
 				AF34B76617DEE2B200BD9082 /* Products */,
 				55277640D2AABB814E20D3F5 /* Pods */,
@@ -174,6 +216,7 @@
 			children = (
 				AF34B76517DEE2B200BD9082 /* SWTableViewCell.app */,
 				76D732631AE2F50100909802 /* SWTableViewCellTests.xctest */,
+				FD35FAF81D251840006C310F /* SWTableViewCellFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,7 +269,27 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD35FAF91D251840006C310F /* SWTableViewCellFramework */ = {
+			isa = PBXGroup;
+			children = (
+				FD35FAFA1D251840006C310F /* SWTableViewCellFramework.h */,
+				FD35FAFC1D251840006C310F /* Info.plist */,
+			);
+			path = SWTableViewCellFramework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FD35FAF51D251840006C310F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD35FAFB1D251840006C310F /* SWTableViewCellFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		76D732621AE2F50100909802 /* SWTableViewCellTests */ = {
@@ -256,15 +319,35 @@
 				AF34B76117DEE2B100BD9082 /* Sources */,
 				AF34B76217DEE2B100BD9082 /* Frameworks */,
 				AF34B76317DEE2B100BD9082 /* Resources */,
+				FD35FB041D251840006C310F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FD35FAFE1D251840006C310F /* PBXTargetDependency */,
 			);
 			name = SWTableViewCell;
 			productName = SWTableViewCell;
 			productReference = AF34B76517DEE2B200BD9082 /* SWTableViewCell.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FD35FAF71D251840006C310F /* SWTableViewCellFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD35FB031D251840006C310F /* Build configuration list for PBXNativeTarget "SWTableViewCellFramework" */;
+			buildPhases = (
+				FD35FAF31D251840006C310F /* Sources */,
+				FD35FAF41D251840006C310F /* Frameworks */,
+				FD35FAF51D251840006C310F /* Headers */,
+				FD35FAF61D251840006C310F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SWTableViewCellFramework;
+			productName = SWTableViewCellFramework;
+			productReference = FD35FAF81D251840006C310F /* SWTableViewCellFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -280,6 +363,10 @@
 						TestTargetID = AF34B76417DEE2B100BD9082;
 					};
 					AF34B76417DEE2B100BD9082 = {
+						DevelopmentTeam = CRQMUWXT26;
+					};
+					FD35FAF71D251840006C310F = {
+						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = CRQMUWXT26;
 					};
 				};
@@ -298,6 +385,7 @@
 			targets = (
 				AF34B76417DEE2B100BD9082 /* SWTableViewCell */,
 				76D732621AE2F50100909802 /* SWTableViewCellTests */,
+				FD35FAF71D251840006C310F /* SWTableViewCellFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -325,6 +413,13 @@
 				AF28B0F117F77DA300A77ABB /* clock@2x.png in Resources */,
 				AF34B78217DEE2B800BD9082 /* MainStoryboard.storyboard in Resources */,
 				AFF15D1717F35E46007F5746 /* MI.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD35FAF61D251840006C310F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +484,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FD35FAF31D251840006C310F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD35FB061D2518AB006C310F /* NSMutableArray+SWUtilityButtons.m in Sources */,
+				FD35FB101D2518AB006C310F /* SWUtilityButtonView.m in Sources */,
+				FD35FB0C1D2518AB006C310F /* SWTableViewCell.m in Sources */,
+				FD35FB0E1D2518AB006C310F /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
+				FD35FB081D2518AB006C310F /* SWCellScrollView.m in Sources */,
+				FD35FB0A1D2518AB006C310F /* SWLongPressGestureRecognizer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -396,6 +504,11 @@
 			isa = PBXTargetDependency;
 			target = AF34B76417DEE2B100BD9082 /* SWTableViewCell */;
 			targetProxy = 76D732691AE2F50200909802 /* PBXContainerItemProxy */;
+		};
+		FD35FAFE1D251840006C310F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD35FAF71D251840006C310F /* SWTableViewCellFramework */;
+			targetProxy = FD35FAFD1D251840006C310F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -556,6 +669,7 @@
 				GCC_PREFIX_HEADER = "SWTableViewCell/SWTableViewCell-Prefix.pch";
 				INFOPLIST_FILE = "SWTableViewCell/SWTableViewCell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -571,9 +685,89 @@
 				GCC_PREFIX_HEADER = "SWTableViewCell/SWTableViewCell-Prefix.pch";
 				INFOPLIST_FILE = "SWTableViewCell/SWTableViewCell-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD35FB011D251840006C310F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SWTableViewCellFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnite.SWTableViewCellFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD35FB021D251840006C310F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = SWTableViewCellFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = org.dnite.SWTableViewCellFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -606,6 +800,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FD35FB031D251840006C310F /* Build configuration list for PBXNativeTarget "SWTableViewCellFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD35FB011D251840006C310F /* Debug */,
+				FD35FB021D251840006C310F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
